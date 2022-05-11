@@ -9,14 +9,14 @@ export default function Dictionary(){
     const[word, setWord]=useState("")
 
     function showResponse(response){
-        console.log(response)
+        console.log(response.data[0])
     }
 
      function search(event){
          event.preventDefault();
          alert(`searching for ${word}`)
 
-         let apiUrl="https://api.dictionaryapi.dev/api/v2/entries/en/sunset"
+         let apiUrl=`https://api.dictionaryapi.dev/api/v2/entries/en/sunset${word}`
          axios.get(apiUrl).then(showResponse)
          
      }
