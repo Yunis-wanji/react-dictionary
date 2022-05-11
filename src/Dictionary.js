@@ -16,7 +16,8 @@ export default function Dictionary(){
          event.preventDefault();
          alert(`searching for ${word}`)
 
-         let apiUrl=`https://api.dictionaryapi.dev/api/v2/entries/en/sunset${word}`
+         let apiUrl=`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`
+         console.log(apiUrl)
          axios.get(apiUrl).then(showResponse)
          
      }
