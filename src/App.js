@@ -15,6 +15,7 @@ function App() {
       <main>
         <Dictionary/>
       </main>
+      <footer>Coded by Eunice Kimani open-sourced on Github and Hosted on Netlify</footer>
       </div>
     </div>
   );
