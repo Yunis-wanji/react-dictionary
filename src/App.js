@@ -1,5 +1,6 @@
 import lens from "./lens.jpg"
 import './App.css';
+import Dictionary from "./Dictionary"
 
 function App() {
   return (
@@ -10,6 +11,9 @@ function App() {
         <h2> MY DICTIONARY</h2>
         </span>
       </header>
+      <main>
+        <Dictionary/>
+      </main>
     </div>
   );
 }
