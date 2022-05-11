@@ -1,11 +1,14 @@
-
+import lens from "./lens.jpg"
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src='/images/lens.jpg' alt='lens' className='lens image-fluid'/>
+        <img src={lens} alt='lens' className='App-lens img-fluid'/>
+        <span className="title">
+        <h2> MY DICTIONARY</h2>
+        </span>
       </header>
     </div>
   );

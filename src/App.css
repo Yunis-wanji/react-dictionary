@@ -1,5 +1,11 @@
-App.lens{
-  max-width: 400px;
+.App-header{
+  margin: 30px;
+}
+.App-lens{
+  max-width: 200px;
   display: block;
   margin: 0 auto;
+}
+.title{
+  text-align: center;
 }
