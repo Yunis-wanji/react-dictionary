@@ -5,6 +5,7 @@ import Dictionary from "./Dictionary"
 function App() {
   return (
     <div className="App">
+      <div className="container">
       <header className="App-header">
         <img src={lens} alt='lens' className='App-lens img-fluid'/>
         <span className="title">
@@ -14,6 +15,7 @@ function App() {
       <main>
         <Dictionary/>
       </main>
+      </div>
     </div>
   );
 }
