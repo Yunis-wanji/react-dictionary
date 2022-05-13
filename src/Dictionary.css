@@ -5,4 +5,8 @@ form{
 
 button{
     margin: 15px;
+} 
+
+.Dictionary{
+    background-image: url(/src/dictionary.jpg);
 }
