@@ -2,7 +2,24 @@ import React from "react"
  
 
 export default function Synonyms(props){
+    console.log(props.synonyms) 
+    if(props.synonyms){
+    
     return(
-        <strong>Hello synonyms</strong>
-    )
+        <ul className=" Synonyms list-unstyled">
+        <strong>
+            {props.synonyms.map(function(synonym, index){
+                return(
+                    <li>
+                    <span key={index}>
+                    {synonym}
+                    </span>
+                    </li>
+                )
+            })}
+        </strong>
+        </ul>
+    )}else{
+        return null
+    }
 }
