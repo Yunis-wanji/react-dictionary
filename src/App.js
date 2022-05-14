@@ -15,7 +15,7 @@ function App() {
       <main>
         <Dictionary/>
       </main>
-      <footer>Coded by Eunice Kimani open-sourced on Github and Hosted on Netlify</footer>
+      <footer>Coded by Eunice Kimani <a href="https://github.com/Yunis-wanji/react-dictionary">open-sourced</a>on Github and Hosted on Netlify</footer>
       </div>
     </div>
   );
