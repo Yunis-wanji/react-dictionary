@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import axios from "axios";
 import "./Dictionary.css"
 import Results from "./Results";
+import Photos from "./Photos";
 // import dictionary from "./dictionary.jpg"
 
 
@@ -10,10 +11,16 @@ export default function Dictionary(){
  
     const[word, setWord]=useState("");
     const [result, setResult]=useState(null)
+    const [photos, setPhotos] = useState(null)
 
     function showResponse(response){
-        console.log(response.data[0]);
+        
         setResult(response.data[0]);
+    }
+
+    function handlePexelsResposnse(response){
+        setPhotos(response.data.photos);
+
     }
 
      function search(event){
@@ -23,6 +30,11 @@ export default function Dictionary(){
          let apiUrl=`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`
          console.log(apiUrl)
          axios.get(apiUrl).then(showResponse)
+
+         let pexelsApiKey= "563492ad6f9170000100000173545b995deb460ba00e1e9a0aa3baea"
+         let headers = {Authorization: `Bearer ${pexelsApiKey}`};
+         let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${word}&per_page=1`
+         axios.get(pexelsApiUrl, {headers:headers}).then(handlePexelsResposnse);
          
      }
 
@@ -42,6 +54,7 @@ export default function Dictionary(){
         </form>
         </section>
         <Results result={result}/>
+        <Photos photos={photos} />
         </div>
     )
 }

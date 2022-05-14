@@ -1,7 +1,7 @@
 import React from "react"
 
 export default function Phonetics(props){
-console.log(props.phonetics.text)
+
     if(props.phonetics){
     return (
 
