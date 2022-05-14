@@ -32,10 +32,15 @@ export default function Dictionary(){
 
     return (
         <div className="Dictionary">
+
+        <p className="header">SEARCH FOR A WORD</p>
+
+            <section className="Form">
         <form onSubmit={search} >
             <input onChange={showWord} type="search" placeholder="Type Word" />
             <button>Search</button>
         </form>
+        </section>
         <Results result={result}/>
         </div>
     )

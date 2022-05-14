@@ -1,12 +1,36 @@
-form{
+.Form{
     text-align: end;
-    margin-right: 145px;
+    padding: 30px 0 ;
+    border-radius: 6px;
+    box-shadow: 6px;
+    margin: 20px 0;
+    background-color:black
+    
+}
+section{
+    padding: 30px  ;
+    border-radius: 6px;
+    box-shadow: 6px;
+    margin:20px 0;
+    background-color: black;
+    opacity: 0.9;
+    color: white;
+    font-size: larger;
+    
+    
 }
 
 button{
     margin: 15px;
 } 
-
-.Dictionary{
-    background-image: url(/src/dictionary.jpg);
+.header{
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
 }
+
+
+
+
+    
+    
